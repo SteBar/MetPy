@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>frontogenesis &mdash; MetPy 0.9</title>
+  <title>smooth_n_point &mdash; MetPy 0.9</title>
   
 
   
@@ -17,7 +17,7 @@
   
   
   
-    <link rel="canonical" href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.frontogenesis.html"/>
+    <link rel="canonical" href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.smooth_n_point.html"/>
   
 
   
@@ -45,8 +45,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="MetPy 0.9" href="../../index.html"/>
         <link rel="up" title="calc" href="metpy.calc.html"/>
-        <link rel="next" title="geostrophic_wind" href="metpy.calc.geostrophic_wind.html"/>
-        <link rel="prev" title="exner_function" href="metpy.calc.exner_function.html"/> 
+        <link rel="next" title="get_wind_components" href="metpy.calc.get_wind_components.html"/>
+        <link rel="prev" title="smooth_gaussian" href="metpy.calc.smooth_gaussian.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -131,35 +131,25 @@
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#dry-thermodynamics">Dry Thermodynamics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#moist-thermodynamics">Moist Thermodynamics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#soundings">Soundings</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="metpy.calc.html#dynamic-kinematic">Dynamic/Kinematic</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.absolute_momentum.html">absolute_momentum</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.absolute_vorticity.html">absolute_vorticity</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.advection.html">advection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.ageostrophic_wind.html">ageostrophic_wind</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.coriolis_parameter.html">coriolis_parameter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.divergence.html">divergence</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.exner_function.html">exner_function</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">frontogenesis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.geostrophic_wind.html">geostrophic_wind</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.inertial_advective_wind.html">inertial_advective_wind</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.kinematic_flux.html">kinematic_flux</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.montgomery_streamfunction.html">montgomery_streamfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.potential_vorticity_baroclinic.html">potential_vorticity_baroclinic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.potential_vorticity_barotropic.html">potential_vorticity_barotropic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.q_vector.html">q_vector</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.shearing_deformation.html">shearing_deformation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.stretching_deformation.html">stretching_deformation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.total_deformation.html">total_deformation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.vorticity.html">vorticity</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.wind_components.html">wind_components</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.wind_direction.html">wind_direction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metpy.calc.wind_speed.html">wind_speed</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#dynamic-kinematic">Dynamic/Kinematic</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#boundary-layer-turbulence">Boundary Layer/Turbulence</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#mathematical-functions">Mathematical Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#apparent-temperature">Apparent Temperature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#other">Other</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="metpy.calc.html#other">Other</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.find_bounding_indices.html">find_bounding_indices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.find_intersections.html">find_intersections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.get_layer.html">get_layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.get_layer_heights.html">get_layer_heights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.get_perturbation.html">get_perturbation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.isentropic_interpolation.html">isentropic_interpolation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.nearest_intersection_idx.html">nearest_intersection_idx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.parse_angle.html">parse_angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.reduce_point_density.html">reduce_point_density</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.resample_nn_1d.html">resample_nn_1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metpy.calc.smooth_gaussian.html">smooth_gaussian</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">smooth_n_point</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
@@ -223,7 +213,7 @@
         
           <li><a href="metpy.calc.html">calc</a> &raquo;</li>
         
-      <li>frontogenesis</li>
+      <li>smooth_n_point</li>
     
     
     <li class="source-link">
@@ -231,7 +221,7 @@
             
                 
                 
-                <a href="https://github.com/Unidata/MetPy/issues/new?title=Suggested%20improvement%20for%20api/generated/metpy.calc.frontogenesis&body=Please%20describe%20what%20could%20be%20improved%20about%20this%20page%20or%20the%20typo/mistake%20that%20you%20found%3A"
+                <a href="https://github.com/Unidata/MetPy/issues/new?title=Suggested%20improvement%20for%20api/generated/metpy.calc.smooth_n_point&body=Please%20describe%20what%20could%20be%20improved%20about%20this%20page%20or%20the%20typo/mistake%20that%20you%20found%3A"
                    class="fa fa-github"> Improve this page</a>
             
         
@@ -245,54 +235,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="frontogenesis">
-<h1>frontogenesis<a class="headerlink" href="#frontogenesis" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="smooth-n-point">
+<h1>smooth_n_point<a class="headerlink" href="#smooth-n-point" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-<dt id="metpy.calc.frontogenesis">
-<code class="descclassname">metpy.calc.</code><code class="descname">frontogenesis</code><span class="sig-paren">(</span><em>thta</em>, <em>u</em>, <em>v</em>, <em>dx</em>, <em>dy</em>, <em>dim_order='yx'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/metpy/calc/kinematics.html#frontogenesis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#metpy.calc.frontogenesis" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate the 2D kinematic frontogenesis of a temperature field.</p>
-<p>The implementation is a form of the Petterssen Frontogenesis and uses the formula
-outlined in <a class="reference internal" href="../../references.html#bluestein1993" id="id1">[Bluestein1993]</a> pg.248-253.</p>
-<div class="math notranslate nohighlight">
-\[F=\frac{1}{2}\left|\nabla \theta\right|[D cos(2\beta)-\delta]\]</div>
-<ul class="simple">
-<li><span class="math notranslate nohighlight">\(F\)</span> is 2D kinematic frontogenesis</li>
-<li><span class="math notranslate nohighlight">\(\theta\)</span> is potential temperature</li>
-<li><span class="math notranslate nohighlight">\(D\)</span> is the total deformation</li>
-<li><span class="math notranslate nohighlight">\(\beta\)</span> is the angle between the axis of dilitation and the isentropes</li>
-<li><span class="math notranslate nohighlight">\(\delta\)</span> is the divergence</li>
-</ul>
+<dt id="metpy.calc.smooth_n_point">
+<code class="descclassname">metpy.calc.</code><code class="descname">smooth_n_point</code><span class="sig-paren">(</span><em>scalar_grid</em>, <em>n=5</em>, <em>passes=1</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/metpy/calc/basic.html#smooth_n_point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#metpy.calc.smooth_n_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter with normal distribution of weights.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>thta</strong> (<em>(</em><em>M</em><em>, </em><em>N</em><em>) </em><em>ndarray</em>) – Potential temperature</li>
-<li><strong>u</strong> (<em>(</em><em>M</em><em>, </em><em>N</em><em>) </em><em>ndarray</em>) – x component of the wind</li>
-<li><strong>v</strong> (<em>(</em><em>M</em><em>, </em><em>N</em><em>) </em><em>ndarray</em>) – y component of the wind</li>
-<li><strong>dx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><em>ndarray</em>) – The grid spacing(s) in the x-direction. If an array, there should be one item less than
-the size of <em class="xref py py-obj">u</em> along the applicable axis.</li>
-<li><strong>dy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em> or </em><em>ndarray</em>) – The grid spacing(s) in the y-direction. If an array, there should be one item less than
-the size of <em class="xref py py-obj">u</em> along the applicable axis.</li>
-<li><strong>dim_order</strong> (str or <code class="docutils literal notranslate"><span class="pre">None</span></code>, optional) – The ordering of dimensions in passed in arrays. Can be one of <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">'xy'</span></code>,
-or <code class="docutils literal notranslate"><span class="pre">'yx'</span></code>. <code class="docutils literal notranslate"><span class="pre">'xy'</span></code> indicates that the dimension corresponding to x is the leading
-dimension, followed by y. <code class="docutils literal notranslate"><span class="pre">'yx'</span></code> indicates that x is the last dimension, preceded
-by y. <code class="docutils literal notranslate"><span class="pre">None</span></code> indicates that the default ordering should be assumed,
-which is ‘yx’. Can only be passed as a keyword argument, i.e.
-func(…, dim_order=’xy’).</li>
+<li><strong>scalar_grid</strong> (array-like or <em class="xref py py-obj">pint.Quantity</em>) – Some 2D scalar grid to be smoothed.</li>
+<li><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The number of points to use in smoothing, only valid inputs
+are 5 and 9. Defaults to 5.</li>
+<li><strong>passes</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The number of times to apply the filter to the grid. Defaults
+to 1.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><em>(M, N) ndarray</em> – 2D Frontogenesis in [temperature units]/m/s</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array-like or <em class="xref py py-obj">pint.Quantity</em> – The filtered 2D scalar grid.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>If inputs have more than two dimensions, they are assumed to have either leading dimensions
-of (x, y) or trailing dimensions of (y, x), depending on the value of <code class="docutils literal notranslate"><span class="pre">dim_order</span></code>.</p>
-<p>Conversion factor to go from [temperature units]/m/s to [temperature units/100km/3h]
-<span class="math notranslate nohighlight">\(1.08e4*1.e5\)</span></p>
+<p>This function is a close replication of the GEMPAK function SM5S
+and SM9S depending on the choice of the number of points to use
+for smoothing. This function can be applied multiple times to
+create a more smoothed field and will only smooth the interior
+points, leaving the end points with their original values. If a
+masked value or NaN values exists in the array, it will propagate
+to any point that uses that particular grid point in the smoothing
+calculation. Applying the smoothing function multiple times will
+propogate NaNs further throughout the domain.</p>
 </dd></dl>
 
 <div style='clear:both'></div></div>
@@ -307,10 +283,10 @@ of (x, y) or trailing dimensions of (y, x), depending on the value of <code clas
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="metpy.calc.geostrophic_wind.html" class="btn btn-neutral float-right" title="geostrophic_wind" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="metpy.calc.get_wind_components.html" class="btn btn-neutral float-right" title="get_wind_components" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="metpy.calc.exner_function.html" class="btn btn-neutral" title="exner_function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="metpy.calc.smooth_gaussian.html" class="btn btn-neutral" title="smooth_gaussian" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
